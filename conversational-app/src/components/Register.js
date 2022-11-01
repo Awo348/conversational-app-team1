@@ -15,8 +15,8 @@ export default function Register(props) {
   return (
     <div className="register">
       <section className="register-form" onSubmit={handleSubmit}>
-        <h2>Sign In</h2>
-        <span>register for best experience</span>
+        <h2>Register</h2>
+        <span>Register for best experience</span>
         <form id="form" className="flex flex-col">
           <input value={name} type="name" placeholder="Full Name" onChange={(e) => setName(e.target.value)}/>
           <input value={username} type="username" placeholder="username" onChange={(e) => setUserName(e.target.value)} />
@@ -24,7 +24,7 @@ export default function Register(props) {
           <input value={pass} type="password" placeholder="password" onChange={(e) => setPass(e.target.value)} />
           <input value={passwordConfirm} type="password" placeholder="confirm password" onChange={(e) => setPasswordConfrim(e.target.value)}/>
 
-          <button className="submit">Sign In</button>
+          <button className="submit">Register</button>
         </form>
       </section>
       <button className="link-btn" onClick={() => props.onFormSwitch("Login")}>

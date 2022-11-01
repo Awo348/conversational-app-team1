@@ -24,7 +24,7 @@ export default function Login(props) {
       </section>
       <button
         className="link-btn"
-        onClick={() => console.log("fffff",props.onFormSwitch("Register"))}
+        onClick={() => props.onFormSwitch("Register")}
       >
         Don't have an account? Register here.
       </button>

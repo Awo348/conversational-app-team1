@@ -8,7 +8,6 @@ function App() {
 
 
   const toggleForm = (formName) => {
-    console.log("foorman,e",formName)
     setCurrentForm(formName);
     return currentForm
   }

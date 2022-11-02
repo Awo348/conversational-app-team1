@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* > * {
+  font-family: "Poppins",
+   cursive;
+  margin: 0;
+}
+
+body {
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.register,
+.login-form,
+.register-form {
+  margin: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.register span {
+  color: #adb5bd;
+}
+
+#form {
+  max-width: 320px;
+  width: 100vw;
+  margin: 0.5em auto;
+}
+
+#form > input,
+.submit {
+  border: 1px solid #e9ecef;
+  padding: 0.9em 1em;
+}
+
+#form > input:focus {
+  outline: none;
+}
+
+#form > .submit {
+  background-color: #003049;
+  color: #e9ecef;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  gap: 0.5em;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+button {
+  padding: 5px;
+  cursor: pointer;
+  color: blue;
+}
+.link-btn {
+  background-color: none;
+  color: red;
+  cursor: pointer;
+}

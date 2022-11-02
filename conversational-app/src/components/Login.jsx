@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 export default function Login(props) {
-  const [username, setUserName] = useState('');
-  const [pass, setPass] = useState('');
+  const [username, setUserName] = useState("");
+  const [pass, setPass] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,8 +16,18 @@ export default function Login(props) {
         <span>Welcome Back</span>
 
         <form id="form" className="flex flex-col">
-          <input value={username} type="username" placeholder="username"  onChange={(e) => setUserName(e.target.value)}/>
-          <input value={pass} type="password" placeholder="password" onChange={(e) => setPass(e.target.value)} />
+          <input
+            value={username}
+            type="username"
+            placeholder="username"
+            onChange={(e) => setUserName(e.target.value)}
+          />
+          <input
+            value={pass}
+            type="password"
+            placeholder="password"
+            onChange={(e) => setPass(e.target.value)}
+          />
 
           <button type="submit">Log In</button>
         </form>

@@ -36,9 +36,9 @@ class UserTests(TestCase):
         self.assertTrue(admin_user.is_superuser)
 
     def test_url_resolves_to_user_details(self):
-        found = resolve('/api/1/')
+        found = resolve('/api/v1/1/')
         self.assertEqual(found.view_name, 'accounts.views.UserDetail')
     
     def test_url_resolves_to_users_list(self):
-        found = resolve('/api/')
+        found = resolve('/api/v1/')
         self.assertEqual(found.view_name, 'accounts.views.ListUser')

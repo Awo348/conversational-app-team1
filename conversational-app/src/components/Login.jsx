@@ -19,13 +19,13 @@ export default function Login(props) {
           <input
             value={username}
             type="username"
-            placeholder="username"
+            placeholder="Username"
             onChange={(e) => setUserName(e.target.value)}
           />
           <input
             value={pass}
             type="password"
-            placeholder="password"
+            placeholder="Password"
             onChange={(e) => setPass(e.target.value)}
           />
 

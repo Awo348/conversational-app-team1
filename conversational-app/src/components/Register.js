@@ -27,25 +27,25 @@ export default function Register(props) {
           <input
             value={username}
             type="username"
-            placeholder="username"
+            placeholder="Username"
             onChange={(e) => setUserName(e.target.value)}
           />
           <input
             value={email}
             type="email"
-            placeholder="email adress"
+            placeholder="Email adress"
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
             value={pass}
             type="password"
-            placeholder="password"
+            placeholder="Password"
             onChange={(e) => setPass(e.target.value)}
           />
           <input
             value={passwordConfirm}
             type="password"
-            placeholder="confirm password"
+            placeholder="Confirm Password"
             onChange={(e) => setPasswordConfrim(e.target.value)}
           />
 

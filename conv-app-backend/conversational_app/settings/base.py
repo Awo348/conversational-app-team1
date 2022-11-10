@@ -17,7 +17,7 @@ from dj_database_url import parse as db_url
 
 env = Env()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
 env_file = os.path.join(BASE_DIR, '.env')

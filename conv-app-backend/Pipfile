@@ -14,6 +14,8 @@ dj-rest-auth = "==2.2.5"
 django-allauth = "==0.50.0"
 
 [dev-packages]
+black = "==22.10.0"
+flake8 = "~=5.0.4"
 
 [requires]
 python_version = "3.8"

@@ -58,6 +58,8 @@ THIRD_PARTY_APPS = (
     "allauth",
     "allauth.account",
     "dj_rest_auth.registration",
+    "drf_spectacular",
+    "drf_spectacular_sidecar",
 )
 
 LOCAL_APPS = ("accounts.apps.AccountsConfig",)
@@ -160,6 +162,7 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "dj_rest_auth.jwt_auth.JWTCookieAuthentication",
     ],
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
 }
 
 REST_USE_JWT = True
@@ -169,3 +172,11 @@ JWT_AUTH_REFRESH_COOKIE = "conv-refresh-token"
 CORS_ORIGIN_WHITELIST = env.list("CORS_ORIGIN_WHITELIST")
 
 SITE_ID = env.int("SITE_ID")
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Conversational app Demo API",
+    "DESCRIPTION": "Your project description",
+    "VERSION": "1.0.0",
+    "SWAGGER_UI_DIST": "SIDECAR",
+    "SWAGGER_UI_FAVICON_HREF": "SIDECAR",
+}

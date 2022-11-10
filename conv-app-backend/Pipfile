@@ -13,6 +13,7 @@ djangorestframework-simplejwt = "==5.2.0"
 dj-rest-auth = "==2.2.5"
 django-allauth = "==0.50.0"
 drf-spectacular = {extras = ["sidecar"], version = "*"}
+psycopg2-binary = "==2.9.5"
 
 [dev-packages]
 black = "==22.10.0"

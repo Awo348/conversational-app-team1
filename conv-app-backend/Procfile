@@ -1,1 +1,0 @@
-web: gunicorn conversational_app.wsgi --log-file -

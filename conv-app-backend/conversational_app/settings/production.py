@@ -22,3 +22,5 @@ DATABASES = {
         'PORT': env.int('DB_PORT'),
     }
 }
+
+STATIC_ROOT = Path(__file__).resolve().parent.parent.parent.parent.parent

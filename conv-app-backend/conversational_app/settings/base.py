@@ -102,14 +102,6 @@ WSGI_APPLICATION = "conversational_app.wsgi.application"
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 
-DATABASES = {
-    "default": env.db_url(
-        "DATABASE_URL",
-        default="sqlite:///" + str(BASE_DIR / "db.sqlite3"),
-    )
-}
-
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 

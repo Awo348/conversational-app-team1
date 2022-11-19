@@ -15,6 +15,7 @@ django-allauth = "==0.50.0"
 drf-spectacular = {extras = ["sidecar"], version = "*"}
 psycopg2-binary = "==2.9.5"
 gunicorn = "==20.1.0"
+whitenoise = "*"
 
 [dev-packages]
 black = "==22.10.0"
